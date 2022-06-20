@@ -1,0 +1,113 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="addition.png" />
+    <None Remove="arrow %281%29.png" />
+    <None Remove="burger-bar.png" />
+    <None Remove="car.png" />
+    <None Remove="graduated.png" />
+    <None Remove="holidays.png" />
+    <None Remove="log-out.png" />
+    <None Remove="online-learning.png" />
+    <None Remove="parents.png" />
+    <None Remove="speedometer.png" />
+    <None Remove="traffic-jam.png" />
+    <None Remove="Views\driver.png" />
+    <None Remove="Views\MainViewSeet\addition.png" />
+    <None Remove="Views\MainViewSeet\back-button.png" />
+    <None Remove="Views\MainViewSeet\exit.png" />
+    <None Remove="Views\MainViewSeet\home.png" />
+    <None Remove="Views\NewCreated\working.png" />
+    <None Remove="Views\NewFramePage\bus.png" />
+    <None Remove="Views\NewFramePage\edit.png" />
+    <None Remove="Views\NewFramePage\exit.png" />
+    <None Remove="Views\NewFramePage\home-address.png" />
+    <None Remove="Views\NewFramePage\left-arrow.png" />
+    <None Remove="Views\NewFramePage\man %281%29.png" />
+    <None Remove="Views\NewFramePage\man %2810%29.png" />
+    <None Remove="Views\NewFramePage\man %282%29.png" />
+    <None Remove="Views\NewFramePage\man %283%29.png" />
+    <None Remove="Views\NewFramePage\man %284%29.png" />
+    <None Remove="Views\NewFramePage\man %285%29.png" />
+    <None Remove="Views\NewFramePage\man %286%29.png" />
+    <None Remove="Views\NewFramePage\man %287%29.png" />
+    <None Remove="Views\NewFramePage\man %288%29.png" />
+    <None Remove="Views\NewFramePage\man %289%29.png" />
+    <None Remove="Views\NewFramePage\man.png" />
+    <None Remove="Views\NewFramePage\pencil %281%29.png" />
+    <None Remove="Views\NewFramePage\pencil.png" />
+    <None Remove="Views\NewFramePage\play.png" />
+    <None Remove="Views\NewFramePage\profile.png" />
+    <None Remove="Views\NewFramePage\reading.png" />
+    <None Remove="Views\NewFramePage\refresh %282%29.png" />
+    <None Remove="Views\NewFramePage\refreshh.png" />
+    <None Remove="Views\NewFramePage\remove %281%29.png" />
+    <None Remove="Views\NewFramePage\remove.png" />
+    <None Remove="Views\NewFramePage\right-arrow.png" />
+    <None Remove="Views\NewFramePage\school %281%29.png" />
+    <None Remove="Views\NewFramePage\school %282%29.png" />
+    <None Remove="Views\NewWarning\warning-sign.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.18.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\Icon\arrow.png" />
+    <Resource Include="Views\Icon\burger-bar.png" />
+    <Resource Include="Views\Icon\car.png" />
+    <Resource Include="Views\Icon\graduated.png" />
+    <Resource Include="Views\Icon\holidays.png" />
+    <Resource Include="Views\Icon\log-out.png" />
+    <Resource Include="Views\Icon\online-learning.png" />
+    <Resource Include="Views\Icon\parents.png" />
+    <Resource Include="Views\Icon\speedometer.png" />
+    <Resource Include="Views\Icon\traffic-jam.png" />
+    <Resource Include="Views\Icon\driver.png" />
+    <Resource Include="Views\Icon\warning-sign.png" />
+    <Resource Include="Views\Icon\back-button.png" />
+    <Resource Include="Views\Icon\addition.png" />
+    <Resource Include="Views\Icon\pencil.png" />
+    <Resource Include="Views\Icon\remove.png" />
+    <Resource Include="Views\Icon\pencil %281%29.png" />
+    <Resource Include="Views\Icon\remove %281%29.png" />
+    <Resource Include="Views\Icon\home-address.png" />
+    <Resource Include="Views\Icon\school %281%29.png" />
+    <Resource Include="Views\Icon\play.png" />
+    <Resource Include="Views\Icon\right-arrow.png" />
+    <Resource Include="Views\Icon\left-arrow.png" />
+    <Resource Include="Views\Icon\working.png" />
+    <Resource Include="Views\Icon\home.png" />
+    <Resource Include="Views\Icon\school %282%29.png" />
+    <Resource Include="Views\Icon\bus.png" />
+    <Resource Include="Views\Icon\reading.png" />
+    <Resource Include="Views\Icon\profile.png" />
+    <Resource Include="Views\Icon\man.png" />
+    <Resource Include="Views\Icon\man %281%29.png" />
+    <Resource Include="Views\Icon\man %282%29.png" />
+    <Resource Include="Views\Icon\man %283%29.png" />
+    <Resource Include="Views\Icon\man %284%29.png" />
+    <Resource Include="Views\Icon\man %285%29.png" />
+    <Resource Include="Views\Icon\man %2810%29.png" />
+    <Resource Include="Views\Icon\man %286%29.png" />
+    <Resource Include="Views\Icon\man %287%29.png" />
+    <Resource Include="Views\Icon\man %288%29.png" />
+    <Resource Include="Views\Icon\man %289%29.png" />
+  </ItemGroup>
+
+</Project>

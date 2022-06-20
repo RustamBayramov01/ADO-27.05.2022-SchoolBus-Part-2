@@ -1,0 +1,165 @@
+﻿<Page x:Class="WpfApp1.Views.NewParentAddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Views"
+      mc:Ignorable="d" 
+      Background="White"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="600" d:DesignWidth="460"
+      Title="NewParentAddPage">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0">
+
+            <StackPanel>
+                <TextBox
+                                
+                                Name="FirstName"
+                    PreviewTextInput="FirstName_PreviewTextInput"
+                                Style="{StaticResource MaterialDesignFilledTextBox}"
+                                VerticalAlignment="Top"
+                                AcceptsReturn="True"
+                                TextWrapping="Wrap"
+                                MaxWidth="400"
+                                Height="60"
+                                FontSize="17"
+                                materialDesign:TextFieldAssist.HasClearButton="True"
+                                materialDesign:HintAssist.Hint="First Name"
+                                IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
+            </StackPanel>
+
+
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+
+            <StackPanel>
+                <TextBox
+                                
+                                Name="LastName"
+                                Style="{StaticResource MaterialDesignFilledTextBox}"
+                                VerticalAlignment="Top"
+                    PreviewTextInput="LastName_PreviewTextInput"
+                                AcceptsReturn="True"
+                                TextWrapping="Wrap"
+                                MaxWidth="400"
+                                materialDesign:TextFieldAssist.HasClearButton="True"
+                                Height="60"
+                                FontSize="17"
+                                materialDesign:HintAssist.Hint="Last Name"
+                                IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
+            </StackPanel>
+
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="2">
+
+            <StackPanel>
+                <TextBox
+                                
+                                Name="Phone"
+                                Style="{StaticResource MaterialDesignFilledTextBox}"
+                                VerticalAlignment="Top"
+                                AcceptsReturn="True"
+                    PreviewTextInput="Phone_PreviewTextInput"
+                                TextWrapping="Wrap"
+                                MaxWidth="400"
+                                materialDesign:TextFieldAssist.HasClearButton="True"
+                                Height="60"
+                                FontSize="17"
+                                materialDesign:HintAssist.Hint="Phone"
+                                IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="3">
+
+            <StackPanel>
+                <TextBox
+                                
+                                Name="Username"
+                                Style="{StaticResource MaterialDesignFilledTextBox}"
+                                VerticalAlignment="Top"
+                                AcceptsReturn="True"
+                    PreviewTextInput="Username_PreviewTextInput"
+                                TextWrapping="Wrap"
+                                MaxWidth="400"
+                                materialDesign:TextFieldAssist.HasClearButton="True"
+                                Height="60"
+                                FontSize="17"
+                                materialDesign:HintAssist.Hint="User name"
+                                IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="4">
+
+            <StackPanel>
+                <TextBox
+                                
+                                Name="Password"
+                                Style="{StaticResource MaterialDesignFilledTextBox}"
+                                VerticalAlignment="Top"
+                                AcceptsReturn="True"
+                                TextWrapping="Wrap"
+                                MaxWidth="400"
+                                materialDesign:TextFieldAssist.HasClearButton="True"
+                                Height="60"
+                                FontSize="17"
+                                materialDesign:HintAssist.Hint="Password"
+                                IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="7" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <Button
+                x:Name="SAVE"
+                Click="SAVE_Click"
+                            Style="{StaticResource MaterialDesignPaperDarkButton}"
+                            Width="130"
+                            Height="50"
+                            BorderBrush="Black"
+                            Foreground="Black"
+                            Margin="0,0,20,0"
+                            Content="SAVE"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" />
+
+            <Button
+                x:Name="CANCEL"
+                Click="CLEAR_Click"
+                            Style="{StaticResource MaterialDesignPaperDarkButton}"
+                            Width="130"
+                            Margin="20,0,0,0"
+                            Height="50"
+                            BorderBrush="Black"
+                            Foreground="Black"
+                            Content="CLEAR"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" />
+
+
+        </StackPanel>
+
+    </Grid>
+</Page>

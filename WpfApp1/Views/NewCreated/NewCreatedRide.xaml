@@ -1,0 +1,48 @@
+﻿<Window x:Class="WpfApp1.Views.NewCreated.NewCreatedRide"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Views.NewCreated"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        WindowStyle="None"
+        Background="Transparent"
+        ResizeMode="CanMinimize"
+        AllowsTransparency="True"
+        Title="IndexWarning" Height="400" Width="250">
+    <Border CornerRadius="20" Background="Black">
+        <Border CornerRadius="20" Background="White" Margin="1">
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Grid.RowSpan="2" Width="150" Margin="0,0,0,50" Source="/Views/Icon/working.png" ></Image>
+                <TextBlock HorizontalAlignment="Center" FontSize="25" Margin="0,80,0,0" Grid.Row="1" FontWeight="Bold">CREATED</TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontSize="15" Margin="0,0,0,0"  Grid.Row="2" FontWeight="Bold">The choice has been made !</TextBlock>
+
+                <Grid
+                Width="120"
+                Grid.Row="2">
+                    <Button
+                    Click="Button_Click"
+                    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                    Height="50"
+                    Margin="0,20,0,0"
+                    Background="Black"
+                    
+                    materialDesign:ButtonAssist.CornerRadius="20"
+                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}">
+                        <TextBlock
+                        Text="OKEY" />
+                    </Button>
+                </Grid>
+
+            </Grid>
+        </Border>
+    </Border>
+</Window>

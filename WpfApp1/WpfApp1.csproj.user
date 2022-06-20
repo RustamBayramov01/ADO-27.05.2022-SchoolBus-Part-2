@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\NewCreated\NewCreatedRide.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFrameAddPage\NewCarAddPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFrameAddPage\NewGroupAddPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFramePage\NewCarPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFramePage\NewCreateRidePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFramePage\NewDrivePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFrameAddPage\NewDriverAddPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFrameAddPage\NewParentAddPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFramePage\NewGroupPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFramePage\NewHolidayPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFramePage\NewHomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFramePage\NewParentPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFrameAddPage\NewStudentAddPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFramePage\NewRidesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewFramePage\NewStudentPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewWarning\FullWarning.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewWarning\IndexWarning.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewWarning\SchoolBusWarning.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UpdateWindows\UpdateCar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UpdateWindows\UpdateDriver.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UpdateWindows\UpdateGroup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UpdateWindows\UpdateParent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UpdateWindows\UpdateStudent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\MainViewSeet\MainView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewCreated\NewCreatedRide.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFrameAddPage\NewCarAddPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFrameAddPage\NewGroupAddPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFramePage\NewCarPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFramePage\NewCreateRidePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFramePage\NewDrivePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFrameAddPage\NewDriverAddPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFrameAddPage\NewParentAddPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFramePage\NewGroupPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFramePage\NewHolidayPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFramePage\NewHomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFramePage\NewParentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFrameAddPage\NewStudentAddPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFramePage\NewRidesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewFramePage\NewStudentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewWarning\FullWarning.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewWarning\IndexWarning.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewWarning\SchoolBusWarning.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UpdateWindows\UpdateCar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UpdateWindows\UpdateDriver.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UpdateWindows\UpdateGroup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UpdateWindows\UpdateParent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UpdateWindows\UpdateStudent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

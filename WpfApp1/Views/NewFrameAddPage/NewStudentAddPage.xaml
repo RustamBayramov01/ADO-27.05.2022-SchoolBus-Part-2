@@ -1,0 +1,172 @@
+﻿<Page x:Class="WpfApp1.Views.NewStudentAddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Views"
+      mc:Ignorable="d" 
+      Background="White"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="600" d:DesignWidth="460"
+      Title="NewStudentAddPage">
+
+    <Grid>
+
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Grid.Row="0">
+
+            <StackPanel>
+                <TextBox
+                                Name="FirstName"
+                                Style="{StaticResource MaterialDesignFilledTextBox}"
+                                VerticalAlignment="Top"
+                                AcceptsReturn="True"
+                                TextWrapping="Wrap"
+                    PreviewTextInput="FirstName_PreviewTextInput"
+                                MaxWidth="400"
+                                Height="60"
+                                FontSize="17"
+                                materialDesign:TextFieldAssist.HasClearButton="True"
+                                materialDesign:HintAssist.Hint="First Name"
+                                IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
+            </StackPanel>
+
+
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+
+            <StackPanel>
+                <TextBox
+                                Name="LastName"
+                                Style="{StaticResource MaterialDesignFilledTextBox}"
+                                VerticalAlignment="Top"
+                                AcceptsReturn="True"
+                    PreviewTextInput="LastName_PreviewTextInput"
+                                TextWrapping="Wrap"
+                                MaxWidth="400"
+                                materialDesign:TextFieldAssist.HasClearButton="True"
+                                Height="60"
+                                FontSize="17"
+                                materialDesign:HintAssist.Hint="Last Name"
+                                IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
+            </StackPanel>
+
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="2">
+
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                </Grid>
+                <ComboBox
+                                x:Name="OutlinedComboBoxx"
+                                Style="{StaticResource MaterialDesignOutlinedComboBox}"
+                                IsEnabled="{Binding Path=IsChecked, ElementName=OutlinedComboBoxEnabledCheckBox}"
+                                materialDesign:HintAssist.Hint="Parent"
+                                MaxWidth="400"
+                                Height="60"
+                                FontSize="17" />
+            </StackPanel>
+
+        </StackPanel>
+
+
+
+
+        <StackPanel Grid.Row="3">
+
+            <StackPanel>
+                <TextBox
+                                x:Name="HomeAddress1"
+                                MaxWidth="400"
+                                Height="60"
+                    PreviewTextInput="HomeAddress1_PreviewTextInput"
+                                FontSize="17"
+                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                VerticalAlignment="Top"
+                                AcceptsReturn="True"
+                                TextWrapping="Wrap"
+                                VerticalScrollBarVisibility="Auto"
+                                materialDesign:HintAssist.Hint="Home Address"
+                                materialDesign:TextFieldAssist.HasClearButton="True"
+                                
+                                IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignOutlinedTextBoxEnabledComboBox}" />
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="4">
+
+            <StackPanel>
+                <TextBox
+                                x:Name="HomeAddress2"
+                                MaxWidth="400"
+                                Height="60"
+                                FontSize="17"
+                                Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                VerticalAlignment="Top"
+                                AcceptsReturn="True"
+                    PreviewTextInput="HomeAddress2_PreviewTextInput"
+                                TextWrapping="Wrap"
+                                VerticalScrollBarVisibility="Auto"
+                                materialDesign:HintAssist.Hint="Other Address"
+                                materialDesign:TextFieldAssist.HasClearButton="True"
+                                
+                                IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignOutlinedTextBoxEnabledComboBox}" />
+            </StackPanel>
+
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="7" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <Button
+                x:Name="SAVE"
+                Click="SAVE_Click"
+                            Style="{StaticResource MaterialDesignPaperDarkButton}"
+                            Width="130"
+                            Height="50"
+                            BorderBrush="Black"
+                            Foreground="Black"
+                            Margin="0,0,20,0"
+                            Content="SAVE"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" />
+
+            <Button
+                x:Name="CANCEL"
+                Click="CANCEL_Click"
+                            Style="{StaticResource MaterialDesignPaperDarkButton}"
+                            Width="130"
+                            Margin="20,0,0,0"
+                            Height="50"
+                            BorderBrush="Black"
+                            Foreground="Black"
+                            Content="CLEAR"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" />
+
+
+        </StackPanel>
+
+    </Grid>
+</Page>
